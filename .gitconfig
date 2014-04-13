@@ -1,0 +1,39 @@
+# 
+# .gitconfig
+#
+
+[color]
+	ui = auto
+
+[user]
+	name = 
+	email = 
+
+[github]
+	username = 
+	token = 
+
+[color "branch"]
+    current = green bold
+    local = green
+    remote = cyan
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = green
+    changed = blue
+    untracked = red
+
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    ls = ls-files
+#    lg = log --graph --pretty=oneline --abbrev-commit --decorate
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
